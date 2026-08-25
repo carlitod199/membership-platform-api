@@ -1,0 +1,36 @@
+{
+  "name": "membership-platform-api",
+  "version": "1.0.0",
+  "description": "Multi-tenant membership management API — Node.js, Express, MySQL, JWT.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/unit/*.test.js test/integration/*.test.js",
+    "check": "node scripts/syntax-check.js",
+    "create-staff-user": "node scripts/create-staff-user.js",
+    "create-member-credential": "node scripts/create-member-credential.js"
+  },
+  "keywords": [
+    "multi-tenant",
+    "express",
+    "mysql",
+    "jwt",
+    "rbac"
+  ],
+  "author": "Carlito Daniel",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.6.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
