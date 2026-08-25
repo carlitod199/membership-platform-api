@@ -1,0 +1,26 @@
+# dependencies
+# package-lock.json is deliberately NOT ignored: this is an application, not a
+# library, and reproducible installs matter more than a tidy diff.
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# runtime output
+logs/
+*.log
+coverage/
+.nyc_output/
+tmp/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
